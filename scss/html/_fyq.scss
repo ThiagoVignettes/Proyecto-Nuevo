@@ -1,0 +1,41 @@
+// Importar Utilidades 
+@import"../utilidades/variables";
+@import"../utilidades/mixin";
+@import"../utilidades/extend";
+@import"../html/media-queries";
+
+/* ESTILOS PARA FYQ */
+
+main{
+    section{
+        @extend %section;
+        
+        @include tablet {
+            margin-left: 6rem;
+            margin-right: 6rem;
+            text-align: justify;
+        }
+        @include escritorio{
+            margin-left: 28rem;
+            margin-right: 28rem;
+            text-align: justify;
+            justify-content: center;
+        }
+
+        h3{
+            color: #6a994e;
+            text-align: center;
+            margin: 0.4rem;
+
+
+        }
+    }
+
+    .titulo-imagen-uno{
+        text-align: center;
+        padding: 0.6rem;
+        color: $color-secundario;
+    }
+
+
+}

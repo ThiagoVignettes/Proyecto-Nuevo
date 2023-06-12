@@ -1,0 +1,48 @@
+// Importar Utilidades 
+@import"../utilidades/variables";
+@import"../utilidades/mixin";
+@import"../utilidades/extend";
+@import"../html/media-queries";
+
+
+main{
+
+    .maps{
+        @include maps(100%, 600px);
+    }
+
+    .form{
+        @include form(100%);
+    }
+
+    .form textarea{
+        resize: none;
+        height: 150px;
+    }
+    
+    .form-container{
+        width: 100px;
+        display: grid;
+        gap: 16px;
+    
+    }
+
+    .form-input{
+        @include form-input(345px);
+    }
+
+    .form-input-form-input-message{
+        @include form-input(345x);
+    }
+
+    .form-title{
+        text-align: center;
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+
+    .form-cta{
+        @include form-cta(#fff);
+    }
+    
+}

@@ -1,0 +1,206 @@
+//importar utilidades
+@import"../utilidades/variables";
+@import"../utilidades/mixin";
+@import"../utilidades/extend";
+@import"../html/media-queries";
+
+/* LOGO */
+.logo{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 15rem;
+}
+
+/* Estilo de Body para todos los HTML */
+
+.main-custom{
+    background-image: url(../img/fondo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Estilo de TODOS los Footer */
+footer{
+    text-align: center;
+    background-color: white;
+
+    h3{
+        padding-bottom: 1rem;
+        padding-top: 3.5rem;
+        font-size: 1.5rem;
+    }
+
+    h5{
+        padding-bottom: 1rem;
+        font-size: 1rem;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    img{
+        width: 45%;
+        margin-bottom: 4rem;
+    }
+}
+
+/* ESTILO DE MAIN */
+
+.main-home{
+    h1{
+        text-align: center;
+        margin-bottom: 2rem;
+        color: $color-secundario;
+        font-size: 2rem;
+        @include tablet{
+            font-size: 2rem;
+            margin-left: 0.5rem;
+            margin-right: 0.5rem;
+        }
+        @include escritorio{
+            font-size: 3.5rem;
+        }
+
+
+    }
+
+    p{
+        text-align: center;
+        color: #386641;
+        margin: 2rem;
+        text-align: justify;
+
+
+        @include escritorio{
+            font-size: 1.5rem;
+            margin-right: 10rem;
+            margin-left: 10rem;
+            margin-bottom: 2rem;
+            margin-top: 2rem;
+        }
+    }
+
+    .contenedor-main{
+        display: flex;
+        flex-direction: column-reverse;
+
+        @include tablet{
+            display: flex;
+            flex-direction: row;
+
+
+        }
+        @include escritorio{
+            display: flex;
+            flex-direction: row;
+            margin-top: 5rem;
+            margin-left: 11rem;
+            margin-right: 11rem;
+        }
+    }
+    
+
+    .contenedor-texto-home{
+        margin: 2rem;
+        h2{
+            color: $color-terciario;
+            font-size: 1.3rem;
+            text-align: center;
+        }
+
+        h3{
+            color: $color-principal;
+            text-align: center;
+        }
+
+        p{
+            color: $color-secundario;
+            text-align: justify;
+        }
+
+        
+    }
+    .contenedor-imagen-home{
+        display: flex;
+        justify-content: center;
+        width: 80%;
+        margin-right: 3rem;
+        margin-left: 3.5rem;
+
+        @include tablet {
+        width: 80%;    
+        display: flex;
+        margin-left: 3rem;
+        }
+
+        @include escritorio{
+            width: 100%;
+        }
+        
+    }
+
+    .contenedor-main-dos{
+        display: flex;
+        flex-direction: column-reverse;
+        margin: 3rem;
+
+        
+        
+
+        @include escritorio{
+            display: flex;
+            flex-direction: row-reverse;
+            width: 90%;
+            gap: 2rem;
+        }
+    }
+    
+    .contenedor-imagen-home-dos{
+        display: none;
+        @include tablet {
+            display: none;
+        }
+        @include escritorio{
+            display: flex;
+            width: 60%;
+            
+        }
+    }
+    
+    
+    .contendor-texto-home-dos h2{
+        color: $color-terciario;
+        text-align: center;
+        @include escritorio{
+            text-align: center;
+            font-size: 1.7rem;
+            margin-left: 7rem;
+        }
+    }
+    
+    .contendor-texto-home-dos h3{
+        color: $color-secundario;
+        text-align: center;
+        @include escritorio{
+            text-align: center;
+            font-size: 3rem;
+            margin-top: 2rem;
+            margin-left: 7rem;
+        }
+    }
+
+    .texto{
+        text-align: justify;
+
+        @include escritorio {
+            text-align: justify;
+            font-size: 1.4rem;
+            margin-top: 4rem;
+            margin-left: 5.6rem;
+        }
+    }
+    
+}
+
+.carousel{
+    margin: 2rem;
+}
+

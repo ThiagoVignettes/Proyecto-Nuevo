@@ -1,0 +1,14 @@
+/* RESET */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// IMPORTAR HTML SASS 
+@import"../scss/html/home";
+@import"../scss/html/productos";
+@import"../scss/html/contacto";
+@import"../scss/html/tratamientos";
+@import"../scss/html/fyq";
