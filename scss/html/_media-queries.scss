@@ -16,3 +16,11 @@
         @content;
     };
 }
+
+//estilo para celulares
+
+@mixin celulares{
+    @media screen and (min-width:480px){
+        @content;
+    };
+}

@@ -5,8 +5,10 @@
 @import"../html/media-queries";
 
 
-main{
-
+.main-contacto{
+    background-image: url(../img/fondo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
     .maps{
         @include maps(100%, 600px);
     }
